@@ -22,12 +22,13 @@ class Feedback extends Component {
             <h1>
               How satisfied are you with our customer support performance?
             </h1>
-            <div className="emojis_container">
+            <ul className="emojis_container">
               {emojis.map(emoji => (
-                <button
+                <li
                   className="emoji_name_container"
                   onClick={this.onClickingEmoji}
                   type="button"
+                  key={emoji.id}
                 >
                   <img
                     src={emoji.imageUrl}
@@ -35,9 +36,9 @@ class Feedback extends Component {
                     className="emoji"
                   />
                   <p>{emoji.name}</p>
-                </button>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
           <div className={`${none} feedback_container`}>
             <img src={loveEmojiUrl} alt="love emoji" className="emoji" />
