@@ -1,0 +1,80 @@
+/* Write your CSS code here. */
+.main_container {
+  background-image: linear-gradient(to right, #ffeeee, #ffc0bb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  width: 90%;
+  font-family: 'Roboto';
+  max-width: 350px;
+}
+
+h1 {
+  color: #0f172a;
+  font-size: 22px;
+  text-align: center;
+}
+
+.emojis_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.emoji_name_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.emoji {
+  width: 50px;
+}
+
+p {
+  color: #1e293b;
+  font-size: 18px;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+.display1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.display2 {
+  display: none;
+}
+
+.feedback_container {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 40px;
+    align-items: center;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .emoji {
+    width: 70px;
+  }
+  .emojis_container {
+    justify-content: space-around;
+  }
+}
